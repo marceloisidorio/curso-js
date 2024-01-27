@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        * {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #bloco {
+            width: 80%;
+            height: 250px;
+            margin: auto;
+            background-color: blue;
+        }
+
+        #bloco p {
+            color: white;
+            font-weight: bold;
+        }
+
+        input {
+            font-size: 40px;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body> <!-- onmouseup="alert('clicou na tela') -->
+    <h1>Eventos em JS</h1>
+    
+    <button onclick="eventoClick()" ondblclick="eventoDblClick()">Clique aqui!</button>
+
+    <p id="texto"></p>
+    
+    <br><br>
+
+    <div id="bloco" onmouseover="viraVermelho()" onmouseout="viraAzul()" onmousemove="adicionaTexto()">
+        <p>Eventos de Mouse</p>
+
+    </div>
+    16:04
+    <br>
+
+    <input onchange="mudou()" id="campotexto" type="text" placeholder="Digite alguma coisa" value="Ja vem com texto.">
+
+    <script src="js/index.js"></script>
+</body>
+</html>
